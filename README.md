@@ -1,11 +1,11 @@
-# AgriWeave Nexus Infrastructure
+# AgriWeave Nexus Infrastructure Release
 
-This repository contains a public-facing release package for AgriWeave Nexus Infrastructure, including a consolidated user-needs record for OE-connected variable functionality and fundamental input handling.
+This repository contains the public AgriWeave Nexus Infrastructure release package.
 
 ## Contents
 - [outputs/agriweave_nexus_infrastructure/user_needs_record.md](outputs/agriweave_nexus_infrastructure/user_needs_record.md)
 - [outputs/agriweave_nexus_infrastructure/README.md](outputs/agriweave_nexus_infrastructure/README.md)
 
 ## Notes
-- The package is prepared for public sharing.
-- Legacy Stitch references have been removed from the user-facing record.
+- This release is prepared for public sharing.
+- The release references AgriWeave Nexus Infrastructure only.
