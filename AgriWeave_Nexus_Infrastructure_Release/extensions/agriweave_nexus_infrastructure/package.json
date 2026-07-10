@@ -1,0 +1,13 @@
+{
+  "name": "agriweave-nexus-infrastructure",
+  "displayName": "AgriWeave Nexus Infrastructure",
+  "description": "Extension-style package for AgriWeave Nexus Infrastructure release assets.",
+  "version": "0.1.0",
+  "publisher": "agriweave",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [],
+  "main": "./extension.js"
+}
