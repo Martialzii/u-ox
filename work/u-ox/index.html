@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U-OX Studio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="hero">
+        <div>
+          <h1>U-OX Studio</h1>
+          <p class="hero-copy">
+            Shape a fresh product concept from a simple prompt and turn it into a polished concept board.
+          </p>
+        </div>
+        <div class="hero-badge">Offline-ready</div>
+      </header>
+
+      <main class="workspace-grid">
+        <section class="panel form-panel">
+          <h2>Design prompt</h2>
+          <label for="prompt">Describe the experience</label>
+          <textarea id="prompt" rows="6" placeholder="Example: a calm AI workspace for farmers to plan harvests and track weather."></textarea>
+
+          <label for="style">Visual tone</label>
+          <select id="style">
+            <option value="lumen">Lumen</option>
+            <option value="aurora">Aurora</option>
+            <option value="echo">Echo</option>
+          </select>
+
+          <label for="projectValue">Estimated project value ($)</label>
+          <input id="projectValue" type="number" min="1000" step="1000" value="10000" />
+
+          <button id="generate">Generate concept</button>
+
+          <div class="history-card">
+            <h3>Recent ideas</h3>
+            <ul id="historyList"></ul>
+          </div>
+        </section>
+
+        <section class="panel preview-panel">
+          <div class="preview-header">
+            <div>
+              <p class="eyebrow">Live concept</p>
+              <h2 id="conceptTitle">A fresh digital experience</h2>
+            </div>
+            <span id="chip" class="chip">Ready</span>
+          </div>
+
+          <div id="conceptCard" class="concept-card">
+            <div class="card-top">
+              <div>
+                <p class="card-label">Outcome</p>
+                <h3 id="conceptSubtitle">A calm, useful interface</h3>
+              </div>
+              <div id="accentDot" class="accent-dot"></div>
+            </div>
+            <p id="conceptSummary" class="card-summary"></p>
+            <div class="feature-list" id="featureList"></div>
+            <div class="action-row">
+              <button class="secondary">Preview</button>
+              <button class="primary">Export</button>
+            </div>
+            <div class="subscription-box">
+              <p class="card-label">Subscription</p>
+              <p class="subscription-amount" id="subscriptionAmount">$10/month</p>
+              <a id="paypalLink" href="https://www.paypal.com/paypalme/cyrussifa" target="_blank" rel="noreferrer">Subscribe</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
